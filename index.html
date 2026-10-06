@@ -145,8 +145,11 @@
 
             const aiMessage = document.createElement("div");
             aiMessage.className = "message ai";
-            aiMessage.textContent =
-                "Hello! I'm Lightning AI. My AI brain isn't connected yet, but we're building it! ⚡";
+            const aiMessage = document.createElement("div");
+aiMessage.className = "message ai";
+chat.appendChild(aiMessage);
+
+aiMessage.textContent = "Thinking... ⚡";
             chat.appendChild(aiMessage);
 
             chat.scrollTop = chat.scrollHeight;
